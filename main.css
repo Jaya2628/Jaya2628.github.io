@@ -91,7 +91,7 @@ main {
 .about-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: right;
   gap: 20px;
 }
 
@@ -105,15 +105,15 @@ main {
 }
 
 .about-image {
-  width:50px;
-  height:50px;
+  width:100px;
+  height:150px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
 .about-image img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 150px;
   display: block;
 }
 
