@@ -1,28 +1,142 @@
-/* styles.css */
-
-.skills-list {
-  list-style: none;
-  padding: 0;
+body {
+  font-family: 'Space Mono', monospace;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  padding: 0;
+  background-color: #d9d2cc; /* Elegant Green color scheme */
+  color: #723e31;
+}
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.skills-list li {
-  margin: 10px;
+.about-me {
+  background-color: #f7f7f7;
   padding: 20px;
-  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.education, .work-experience, .projects, .achievements, .testimonials {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #23527c;
+}
+
+
+header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.skills-list i {
-  font-size: 24px;
-  margin-right: 10px;
+h2 {
+  margin-top: 0;
 }
 
-.skills-list span {
-  font-size: 16px;
-  color: #666;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #23527c;
+}
+#about {
+    background-image: url('about-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
