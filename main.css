@@ -61,20 +61,12 @@ main {
     padding: 40px;
 }
 
-.about {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.about-content {
-    flex: 1;
-}
-
-.about-image img {
-    width: 200px;
-    border-radius: 50%; /* Circle image */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+h1 {
+    font-family: 'Cinzel', serif; /* Decorative font */
+    font-size: 2.5rem; /* Larger heading size */
+    color: DimGray; /* Dark text color */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -89,66 +81,6 @@ p {
     font-size: 1.2rem; /* Larger paragraph size */
     line-height: 1.5; /* Improved readability */
     color: Gray; /* Medium-dark text color */
-}
-
-/* Project Styles */
-.project {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.project-image img {
-    width: 200px;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
-}
-
-.project-details h3 {
-    font-family: 'Cinzel', serif; /* Decorative font */
-    font-size: 1.5rem; /* Larger heading size */
-    color: DimGray; /* Dark text color */
-    margin-bottom: 10px;
-}
-
-.project-details p {
-    font-size: 1.2rem; /* Larger paragraph size */
-    line-height: 1.5; /* Improved readability */
-    color: Gray; /* Medium-dark text color */
-}
-
-/* Testimonials Section */
-.testimonial {
-    background-color: WhiteSmoke; /* White Smoke */
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-/* Contact Section */
-.contact-info {
-    background-color: WhiteSmoke; /* White Smoke */
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.contact-info ul {
-    padding: 0;
-}
-
-.contact-info li {
-    margin-bottom: 10px;
-}
-
-.contact-info a {
-    color: OrangeRed; /* Orange Red */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact-info a:hover {
-    color: DarkOrange; /* Dark Orange */
 }
 
 /* Footer Section */
@@ -167,4 +99,28 @@ footer {
 
 .social-links a:hover {
     color: OrangeRed; /* Orange Red */
+}
+
+/* Additional Styles */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-image {
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    overflow: hidden;
+    border-radius: 50%; /* Circle shape */
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
