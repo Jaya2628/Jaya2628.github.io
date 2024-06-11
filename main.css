@@ -105,15 +105,15 @@ main {
 }
 
 .about-image {
-  width:100px;
-  height:150px;
+  width:200px;
+  height:200px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
 
 .about-image img {
-  width: 100px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   display: block;
 }
 
@@ -131,7 +131,14 @@ main {
   align-items: center;
   margin-bottom: 20px;
 }
-
+/* .project-card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 10px);
+} */
 .project-image img {
   width: 200px;
   border-radius: 10px;
