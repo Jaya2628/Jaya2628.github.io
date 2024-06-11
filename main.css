@@ -58,20 +58,21 @@ body {
 
 .about p {
   font-size: 18px;
+  font-family:cursive;
   margin-bottom: 20px;
 }
 
 /* Achievements Section Styles */
 
 .achievements {
-  background-color: #fff;
+  background-color:yellow;
   padding: 20px;
   text-align: center;
 }
 
 .achievements h2 {
   background: linear-gradient(to bottom, #fff 50%, transparent 50%);
-  background-size: 100% 200px;
+  background-size: 100% 100px;
   background-position: 0% 100%;
   padding: 20px;
   font-weight: bold;
@@ -80,7 +81,7 @@ body {
 }
 
 .achievements h2 span {
-  background: #fff;
+  background: yellow;
   padding: 10px;
 }
 
@@ -102,7 +103,7 @@ body {
 /* Work Section Styles */
 
 .work {
-  background-color: #fff;
+  background-color:BabyPink;
   padding: 20px;
   text-align: center;
 }
@@ -118,7 +119,7 @@ body {
 }
 
 .work h2 span {
-  background: #fff;
+  background: BabyPink;
   padding: 10px;
 }
 
