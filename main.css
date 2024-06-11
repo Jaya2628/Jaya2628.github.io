@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif; /* Another decorative font */
     margin: 0;
     padding: 0;
-    background-color: Darkblue; /* Light background */
+    background-color: WhiteSmoke; /* Light background */
     color: DimGray; /* Dark text color */
 }
 
@@ -37,7 +37,7 @@ nav li {
 }
 
 nav a {
-    color:  WhiteSmoke; /* White */
+    color:Black; /* White */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
