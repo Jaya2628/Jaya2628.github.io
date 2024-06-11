@@ -7,36 +7,34 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  color: Navy;
-  background-color: LightGray;
+  color: navy;
+  background-color: lightgray;
 }
 
 .container {
   max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
-  background-color: White;
-  border: 1px solid Gray;
-  box-shadow: 0 0 10px rgba(Black, 0.1);
+  background-color: white;
+  border: 1px solid gray;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Header Styles */
 
 .header {
-  background-image: url('header-bg.jpg'); /* add a background image to the header */
-  background-size: cover;
-  background-position: center;
+  background-color: darkslategray;
   padding: 20px;
   text-align: center;
-  color: White;
+  color: white;
 }
 
 .header h1 {
   font-size: 36px;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 4px Black; /* add a text shadow to the header title */
+  text-shadow: 2px 2px 4px black; /* Add a text shadow to the header title */
 }
 
 .header p {
@@ -47,7 +45,7 @@ body {
 /* Navigation Styles */
 
 .nav {
-  background-color: DarkGray;
+  background-color: darkgray;
   padding: 10px;
   text-align: center;
 }
@@ -64,32 +62,37 @@ body {
   margin-right: 20px;
 }
 
+.nav li:last-child {
+  margin-right: 0;
+}
+
 .nav a {
-  color: White;
+  color: white;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .nav a:hover {
-  color: LightGray;
+  color: lightgray;
 }
 
 /* Hero Section Styles */
 
 .hero {
-  background-image: url('hero-bg.jpg'); /* add a background image to the hero section */
-  background-size: cover;
-  background-position: center;
+  background-color: teal;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: White;
+  color: white;
+  text-align: center;
 }
 
 .hero h1 {
   font-size: 48px;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px Black; /* add a text shadow to the hero title */
+  text-shadow: 2px 2px 4px black; /* Add a text shadow to the hero title */
 }
 
 .hero p {
@@ -97,37 +100,42 @@ body {
   margin-bottom: 40px;
 }
 
-/* About Section Styles */
+/* Section Styles with Background Colors */
+
+.section {
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+}
+
+/* About Section */
 
 .about {
-  background-color: LightBlue;
-  padding: 20px;
-  text-align: center;
+  background-color: lightblue;
 }
 
 .about h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: Navy;
+  color: navy;
 }
 
 .about p {
   font-size: 18px;
   margin-bottom: 20px;
+  color: darkblue;
 }
 
-/* Skills Section Styles */
+/* Skills Section */
 
 .skills {
-  background-color: PaleGreen;
-  padding: 20px;
-  text-align: center;
+  background-color: palegreen;
 }
 
 .skills h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: ForestGreen;
+  color: forestgreen;
 }
 
 .skills ul {
@@ -138,25 +146,24 @@ body {
 
 .skills li {
   padding: 10px;
-  border-bottom: 1px solid Gray;
+  border-bottom: 1px solid gray;
+  color: darkgreen;
 }
 
 .skills li:last-child {
   border-bottom: none;
 }
 
-/* Experience Section Styles */
+/* Experience Section */
 
 .experience {
-  background-color: LightGray;
-  padding: 20px;
-  text-align: center;
+  background-color: lightcoral;
 }
 
 .experience h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: Navy;
+  color: darkred;
 }
 
 .experience ul {
@@ -167,25 +174,24 @@ body {
 
 .experience li {
   padding: 10px;
-  border-bottom: 1px solid Gray;
+  border-bottom: 1px solid gray;
+  color: darkred;
 }
 
 .experience li:last-child {
   border-bottom: none;
 }
 
-/* Education Section Styles */
+/* Education Section */
 
 .education {
-  background-color: PaleBlue;
-  padding: 20px;
-  text-align: center;
+  background-color: lightyellow;
 }
 
 .education h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: Navy;
+  color: darkorange;
 }
 
 .education ul {
@@ -196,49 +202,69 @@ body {
 
 .education li {
   padding: 10px;
-  border-bottom: 1px solid Gray;
+  border-bottom: 1px solid gray;
+  color: darkorange;
 }
 
 .education li:last-child {
   border-bottom: none;
 }
 
+/* Footer Section */
+
+.footer {
+  background-color: darkslategray;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-links a {
+  color: white;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: orangered;
+}
+
 /* Responsive Styles */
 
 /* Desktop */
 @media (min-width: 1200px) {
- .container {
+  .container {
     max-width: 1200px;
   }
 }
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1199px) {
- .container {
+  .container {
     max-width: 768px;
   }
 }
 
 /* Mobile */
 @media (max-width: 767px) {
- .container {
+  .container {
     max-width: 100%;
     padding: 10px;
   }
- .header {
-    background-image: none;
+  .header {
     padding: 10px;
   }
- .nav {
+  .nav {
     flex-direction: column;
   }
- .nav li {
+  .nav li {
     margin-right: 0;
   }
- .hero {
+  .hero {
     height: 50vh;
   }
- .about,.skills,.experience,.education {
+  .about, .skills, .experience, .education {
     padding: 10px;
   }
 }
