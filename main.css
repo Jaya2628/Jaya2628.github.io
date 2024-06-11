@@ -1,8 +1,13 @@
 /* Global Styles */
-body {
-  font-family: 'Roboto', sans-serif;
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
   background-color: WhiteSmoke;
   color: DimGray;
 }
@@ -18,10 +23,8 @@ a {
   color: DimGray;
 }
 
-/* Bootstrap CSS */
-@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
-
 /* Header Styles */
+
 header {
   background-color: DarkSlateGray;
   color: White;
@@ -41,7 +44,6 @@ nav li {
 
 nav a {
   color: White;
-  text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -51,11 +53,13 @@ nav a:hover {
 }
 
 /* Main Styles */
+
 main {
   padding: 20px;
 }
 
 /* Section Styles */
+
 .section {
   margin-bottom: 40px;
   background-color: WhiteSmoke;
@@ -65,9 +69,10 @@ main {
 }
 
 /* About Styles */
+
 .about {
   display: flex;
-  align-items: right;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -125,6 +130,7 @@ main {
 }
 
 /* Project Styles */
+
 .project {
   display: flex;
   align-items: center;
@@ -152,6 +158,7 @@ main {
 }
 
 /* Testimonials Section */
+
 .testimonial {
   background-color: WhiteSmoke;
   padding: 20px;
@@ -160,6 +167,7 @@ main {
 }
 
 /* Contact Section */
+
 .contact-info {
   background-color: WhiteSmoke;
   padding: 20px;
@@ -187,6 +195,7 @@ main {
 }
 
 /* Footer Section */
+
 footer {
   background-color: DarkSlateGray;
   color: White;
@@ -205,6 +214,7 @@ footer {
 }
 
 /* Bootstrap Overrides */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -231,4 +241,140 @@ footer {
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
-</style>
+
+/* Additional Styles */
+
+/* Card hover effect */
+.card:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+/* Section titles */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: DimGray;
+}
+
+/* Button styles */
+.btn {
+  background-color: OrangeRed;
+  color: White;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: DarkOrange;
+  transition: all 0.3s ease;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-card {
+    width: 100%;
+  }
+  .project-image img {
+    width: 150px;
+  }
+  .contact-info ul {
+    flex-direction: column;
+  }
+  .contact-info li {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .about-image {
+    width: 100%;
+    height: 100px;
+  }
+  .project {
+    flex-direction: column;
+  }
+  .project-image img {
+    width: 100%;
+  }
+}
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-card {
+    width: 100%;
+  }
+  .project-image img {
+    width: 150px;
+  }
+  .contact-info ul {
+    flex-direction: column;
+  }
+  .contact-info li {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .about-image {
+    width: 100%;
+    height: 100px;
+  }
+  .project {
+    flex-direction: column;
+  }
+  .project-image img {
+    width: 100%;
+  }
+}
+
+/* Fix for card issue */
+.about-card {
+  overflow: hidden;
+}
+
+.about-image {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.about-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Add some padding to the about section */
+.about {
+  padding: 40px;
+}
+
+/* Add some margin to the project section */
+.project {
+  margin-bottom: 40px;
+}
+
+/* Add some padding to the testimonials section */
+.testimonial {
+  padding: 40px;
+}
+
+/* Add some padding to the contact section */
+.contact-info {
+  padding: 40px;
+}
+
+/* Add some padding to the footer section */
+footer {
+  padding: 40px;
+}
