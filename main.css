@@ -1,11 +1,9 @@
-css
-
 /* Global Styles */
 body {
     font-family: 'Roboto', sans-serif; /* Another decorative font */
     margin: 0;
     padding: 0;
-    background-color:Darkblue; /* Light background */
+    background-color: Darkblue; /* Light background */
     color: DimGray; /* Dark text color */
 }
 
@@ -169,4 +167,41 @@ footer {
 
 .social-links a:hover {
     color: OrangeRed; /* Orange Red */
+}
+
+/* About Section Styles */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between the cards */
+}
+
+.about-card {
+    width: calc(50% - 10px); /* Set the width of each card */
+    border: 1px solid #ccc; /* Example border */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-text {
+    padding: 20px;
 }
