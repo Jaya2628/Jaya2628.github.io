@@ -85,6 +85,7 @@ main {
     border-radius: 100%; /* Circle image */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
+
 h2 {
     font-family: 'Cinzel', serif; /* Decorative font */
     font-size: 2rem; /* Larger heading size */
@@ -98,6 +99,7 @@ p {
     line-height: 1.5; /* Improved readability */
     color: Gray; /* Medium-dark text color */
 }
+
 /* Project Styles */
 .project {
     display: flex;
