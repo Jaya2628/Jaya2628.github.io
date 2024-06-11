@@ -2,20 +2,21 @@ body {
   font-family: 'Space Mono', monospace;
   margin: 0;
   padding: 0;
-  background-color: #d9d2cc; /* Elegant Green color scheme */
-  color: #723e31;
+  background-color: olivegreen;
+  color: white;
 }
+
 .container {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: white;
+  border: 1px solid lightgrey;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-me {
-  background-color: #f7f7f7;
+  background-color: lightgray;
   padding: 20px;
   border-radius: 10px;
 }
@@ -23,7 +24,7 @@ body {
 .education, .work-experience, .projects, .achievements, .testimonials {
   margin-bottom: 20px;
   padding: 20px;
-  background-color: #f7f7f7;
+  background-color: lightgray;
   border-radius: 10px;
 }
 
@@ -42,12 +43,12 @@ li {
 }
 
 a {
-  color: #337ab7;
+  color: steelblue;
   text-decoration: none;
 }
 
 a:hover {
-  color: #23527c;
+  color: darkslateblue;
 }
 
 .contact-info {
@@ -65,17 +66,16 @@ a:hover {
 }
 
 .contact-info a {
-  color: #337ab7;
+  color: steelblue;
   text-decoration: none;
 }
 
 .contact-info a:hover {
-  color: #23527c;
+  color: darkslateblue;
 }
 
-
 header {
-  background-color: #333;
+  background-color: dimgray;
   padding: 20px;
   text-align: center;
 }
@@ -93,7 +93,7 @@ nav li {
 }
 
 nav a {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 
@@ -105,7 +105,7 @@ main {
 }
 
 section {
-  background-color: #f7f7f7;
+  background-color: whitesmoke;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -127,16 +127,16 @@ li {
 }
 
 a {
-  color: #337ab7;
+  color: steelblue;
   text-decoration: none;
 }
 
 a:hover {
-  color: #23527c;
-}
-#about {
-    background-image: url('about-bg.jpg');
-    background-size: cover;
-    background-position: center;
+  color: darkslateblue;
 }
 
+#about {
+  background-image: url('about-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
