@@ -28,7 +28,7 @@ a {
 
 /* Header Styles */
 header {
-    background-color: DarkSlateGray; /* Dark slate gray */
+    background-color:OliveGreen; /* Dark slate gray */
     color: White; /* White */
     padding: 20px;
     text-align: center;
@@ -80,8 +80,8 @@ main {
 }
 
 .about-image img {
-    width: 200px;
-    border-radius: 50%; /* Circle image */
+    width: 50px;
+    border-radius: 100%; /* Circle image */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -161,7 +161,7 @@ p {
 
 /* Footer Section */
 footer {
-    background-color: DarkSlateGray; /* Dark slate gray */
+    background-color:OliveGreen; /* Dark slate gray */
     color: White; /* White */
     text-align: center;
     padding: 20px;
@@ -211,54 +211,7 @@ footer {
 /* Experience Section Styles */
 /* Footer Styles */
 
-.footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  clear: both;
-}
 
-.footer p {
-  margin-bottom: 10px;
-}
-
-.footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  color: #ccc;
-}
-
-/* Social Media Icons Styles */
-
-.social-media {
-  margin-top: 20px;
-}
-
-.social-media ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.social-media li {
-  margin-right: 20px;
-}
-
-.social-media a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 24px;
-}
-
-.social-media a:hover {
-  color: #ccc;
-}
 
 /* Responsive Styles */
 
