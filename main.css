@@ -1,224 +1,176 @@
 /* Global Styles */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: Navy;
-  background-color: LightGray;
+  margin: 0;
+  padding: 0;
+  background-color: WhiteSmoke;
+  color: DimGray;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: White;
-  border: 1px solid Gray;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Header Styles */
-
-.header {
-  background-color: DarkSlateGray;
-  padding: 20px;
-  text-align: center;
-  color: White;
-}
-
-.header h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 4px Black; /* Add a text shadow to the header title */
-}
-
-.header p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-/* Navigation Styles */
-
-.nav {
-  background-color: DarkGray;
-  padding: 10px;
-  text-align: center;
-}
-
-.nav ul {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: space-between;
 }
 
-.nav li {
+a {
+  text-decoration: none;
+  color: DimGray;
+}
+
+/* Bootstrap CSS */
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+
+/* Header Styles */
+header {
+  background-color: DarkSlateGray;
+  color: White;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  display: inline;
   margin-right: 20px;
 }
 
-.nav li:last-child {
-  margin-right: 0;
-}
-
-.nav a {
+nav a {
   color: White;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.nav a:hover {
-  color: LightGray;
+nav a:hover {
+  color: OrangeRed;
 }
 
-/* Hero Section Styles */
-
-.hero {
-  background-color: Teal;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: White;
-  text-align: center;
+/* Main Styles */
+main {
+  padding: 20px;
 }
 
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 4px Black; /* Add a text shadow to the hero title */
-}
-
-.hero p {
-  font-size: 24px;
+/* Section Styles */
+.section {
   margin-bottom: 40px;
+  background-color: WhiteSmoke;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
 }
 
-/* About Section Styles */
-
+/* About Styles */
 .about {
-  background-color: LightBlue;
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-image img {
+  width: 200px;
+  border-radius: 200px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#about {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  gap: 20px;
+}
+
+.about-card {
+  background-color: #fff;
   padding: 20px;
-  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(50% - 10px);
 }
 
-.about h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: Navy;
+.about-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
-.about p {
-  font-size: 18px;
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-text {
+  padding: 20px;
+}
+
+.about-text h2 {
+  margin-top: 0;
+}
+
+/* Project Styles */
+.project {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-/* Skills Section Styles */
-
-.skills {
-  background-color: PaleGreen;
-  padding: 20px;
-  text-align: center;
+.project-image img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
 }
 
-.skills h2 {
-  font-size: 24px;
+.project-details h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  color: DimGray;
   margin-bottom: 10px;
-  color: ForestGreen;
 }
 
-.skills ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.project-details p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: Gray;
 }
 
-.skills li {
-  padding: 10px;
-  border-bottom: 1px solid Gray;
-}
-
-.skills li:last-child {
-  border-bottom: none;
-}
-
-/* Experience Section Styles */
-
-.experience {
-  background-color: LightGray;
+/* Testimonials Section */
+.testimonial {
+  background-color: WhiteSmoke;
   padding: 20px;
-  text-align: center;
-}
-
-.experience h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: Navy;
-}
-
-.experience ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.experience li {
-  padding: 10px;
-  border-bottom: 1px solid Gray;
-}
-
-.experience li:last-child {
-  border-bottom: none;
-}
-
-/* Education Section Styles */
-
-.education {
-  background-color: PaleBlue;
-  padding: 20px;
-  text-align: center;
-}
-
-.education h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: Navy;
-}
-
-.education ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.education li {
-  padding: 10px;
-  border-bottom: 1px solid Gray;
-}
-
-.education li:last-child {
-  border-bottom: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 /* Contact Section */
-
 .contact-info {
-  background-color: LightYellow;
+  background-color: WhiteSmoke;
   padding: 20px;
-  text-align: center;
   border-radius: 10px;
 }
 
 .contact-info ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .contact-info li {
@@ -236,8 +188,7 @@ body {
 }
 
 /* Footer Section */
-
-.footer {
+footer {
   background-color: DarkSlateGray;
   color: White;
   text-align: center;
@@ -248,11 +199,63 @@ body {
   color: White;
   margin-right: 10px;
   font-size: 1.5rem;
-  transition: color 0.3s ease;
 }
 
 .social-links a:hover {
   color: OrangeRed;
+}
+
+/* Bootstrap Overrides */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  margin: 0 -15px;
+}
+
+.col-md-4 {
+  padding: 0 15px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Background Colors for Additional Sections */
+.achievements {
+  background-color: LightCoral;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.work {
+  background-color: LightGreen;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.education {
+  background-color: LightBlue;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 /* Responsive Styles */
@@ -277,13 +280,13 @@ body {
     max-width: 100%;
     padding: 10px;
   }
-  .header {
+  header {
     padding: 10px;
   }
-  .nav {
+  nav {
     flex-direction: column;
   }
-  .nav li {
+  nav li {
     margin-right: 0;
   }
   .hero {
