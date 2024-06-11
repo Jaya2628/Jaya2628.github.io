@@ -7,34 +7,34 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  color: navy;
-  background-color: lightgray;
+  color: Navy;
+  background-color: LightGray;
 }
 
 .container {
   max-width: 1200px;
   margin: 40px auto;
   padding: 20px;
-  background-color: white;
-  border: 1px solid gray;
+  background-color: White;
+  border: 1px solid Gray;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Header Styles */
 
 .header {
-  background-color: darkslategray;
+  background-color: DarkSlateGray;
   padding: 20px;
   text-align: center;
-  color: white;
+  color: White;
 }
 
 .header h1 {
   font-size: 36px;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 4px black; /* Add a text shadow to the header title */
+  text-shadow: 2px 2px 4px Black; /* Add a text shadow to the header title */
 }
 
 .header p {
@@ -45,7 +45,7 @@ body {
 /* Navigation Styles */
 
 .nav {
-  background-color: darkgray;
+  background-color: DarkGray;
   padding: 10px;
   text-align: center;
 }
@@ -67,32 +67,32 @@ body {
 }
 
 .nav a {
-  color: white;
+  color: White;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .nav a:hover {
-  color: lightgray;
+  color: LightGray;
 }
 
 /* Hero Section Styles */
 
 .hero {
-  background-color: teal;
+  background-color: Teal;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: White;
   text-align: center;
 }
 
 .hero h1 {
   font-size: 48px;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px black; /* Add a text shadow to the hero title */
+  text-shadow: 2px 2px 4px Black; /* Add a text shadow to the hero title */
 }
 
 .hero p {
@@ -100,42 +100,37 @@ body {
   margin-bottom: 40px;
 }
 
-/* Section Styles with Background Colors */
-
-.section {
-  padding: 60px 20px;
-  color: white;
-  text-align: center;
-}
-
-/* About Section */
+/* About Section Styles */
 
 .about {
-  background-color: lightblue;
+  background-color: LightBlue;
+  padding: 20px;
+  text-align: center;
 }
 
 .about h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: navy;
+  color: Navy;
 }
 
 .about p {
   font-size: 18px;
   margin-bottom: 20px;
-  color: darkblue;
 }
 
-/* Skills Section */
+/* Skills Section Styles */
 
 .skills {
-  background-color: palegreen;
+  background-color: PaleGreen;
+  padding: 20px;
+  text-align: center;
 }
 
 .skills h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: forestgreen;
+  color: ForestGreen;
 }
 
 .skills ul {
@@ -146,24 +141,25 @@ body {
 
 .skills li {
   padding: 10px;
-  border-bottom: 1px solid gray;
-  color: darkgreen;
+  border-bottom: 1px solid Gray;
 }
 
 .skills li:last-child {
   border-bottom: none;
 }
 
-/* Experience Section */
+/* Experience Section Styles */
 
 .experience {
-  background-color: lightcoral;
+  background-color: LightGray;
+  padding: 20px;
+  text-align: center;
 }
 
 .experience h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: darkred;
+  color: Navy;
 }
 
 .experience ul {
@@ -174,24 +170,25 @@ body {
 
 .experience li {
   padding: 10px;
-  border-bottom: 1px solid gray;
-  color: darkred;
+  border-bottom: 1px solid Gray;
 }
 
 .experience li:last-child {
   border-bottom: none;
 }
 
-/* Education Section */
+/* Education Section Styles */
 
 .education {
-  background-color: lightyellow;
+  background-color: PaleBlue;
+  padding: 20px;
+  text-align: center;
 }
 
 .education h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: darkorange;
+  color: Navy;
 }
 
 .education ul {
@@ -202,32 +199,60 @@ body {
 
 .education li {
   padding: 10px;
-  border-bottom: 1px solid gray;
-  color: darkorange;
+  border-bottom: 1px solid Gray;
 }
 
 .education li:last-child {
   border-bottom: none;
 }
 
+/* Contact Section */
+
+.contact-info {
+  background-color: LightYellow;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: OrangeRed;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: DarkOrange;
+}
+
 /* Footer Section */
 
 .footer {
-  background-color: darkslategray;
-  color: white;
+  background-color: DarkSlateGray;
+  color: White;
   text-align: center;
   padding: 20px;
 }
 
 .social-links a {
-  color: white;
+  color: White;
   margin-right: 10px;
   font-size: 1.5rem;
   transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-  color: orangered;
+  color: OrangeRed;
 }
 
 /* Responsive Styles */
@@ -264,7 +289,7 @@ body {
   .hero {
     height: 50vh;
   }
-  .about, .skills, .experience, .education {
+  .about, .skills, .experience, .education, .contact-info {
     padding: 10px;
   }
 }
