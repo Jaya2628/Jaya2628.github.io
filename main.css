@@ -80,7 +80,7 @@ main {
 }
 
 .about-image img {
-    width: 50px;
+    width: 100px;
     border-radius: 100%; /* Circle image */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
@@ -98,6 +98,14 @@ p {
     line-height: 1.5; /* Improved readability */
     color: Gray; /* Medium-dark text color */
 }
+.section {
+    margin-bottom: 40px;
+    background-color: White; /* White */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    padding: 40px;
+}
+
 
 /* Project Styles */
 .project {
