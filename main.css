@@ -84,14 +84,14 @@ main {
 
 #about {
   display: flex;
-  justify-content: left;
+  justify-content: right;
   align-items: right;
 }
 
 .about-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: right;
+  justify-content:left;
   gap: 20px;
 }
 
