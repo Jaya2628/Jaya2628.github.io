@@ -6,177 +6,176 @@
   padding: 0;
 }
 
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif; /* Another decorative font */
+    margin: 0;
+    padding: 0;
+    background-color: WhiteSmoke; /* Light background */
+    color: DimGray; /* Dark text color */
 }
 
-.container {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: DimGray; /* Dark text color */
 }
 
 /* Header Styles */
-
-.header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.header h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-/* About Section Styles */
-
-.about {
-  background-color: #f7f7f7;
-  padding: 20px;
-}
-
-.about img {
-  width: 100%;
-  height:50px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.about h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.about p {
-  font-size: 18px;
-  font-family:cursive;
-  margin-bottom: 20px;
-}
-
-.education, .work-experience, .projects, .achievements, .testimonials {
-  margin-bottom: 20px;
-  padding: 20px;
-  background-color: lightgray;
-  border-radius: 10px;
-}
-
-h2 {
-  margin-top: 0;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-a {
-  color: steelblue;
-  text-decoration: none;
-}
-
-a:hover {
-  color: darkslateblue;
-}
-
-.contact-info {
-  margin-top: 20px;
-}
-
-.contact-info ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.contact-info li {
-  margin-bottom: 10px;
-}
-
-.contact-info a {
-  color: steelblue;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  color: darkslateblue;
-}
-
 header {
-  background-color: dimgray;
-  padding: 20px;
-  text-align: center;
+    background-color: DarkSlateGray; /* Dark slate gray */
+    color: White; /* White */
+    padding: 20px;
+    text-align: center;
 }
 
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav li {
-  margin-right: 20px;
+    display: inline;
+    margin-right: 20px;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
+    color: White; /* White */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
+nav a:hover {
+    color: OrangeRed; /* Orange Red */
+}
+
+/* Main Styles */
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+    padding: 20px;
 }
 
-section {
-  background-color: whitesmoke;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Section Styles */
+.section {
+    margin-bottom: 40px;
+    background-color: White; /* White */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    padding: 40px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-image img {
+    width: 200px;
+    border-radius: 50%; /* Circle image */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  margin-top: 0;
+    font-family: 'Cinzel', serif; /* Decorative font */
+    font-size: 2rem; /* Larger heading size */
+    color: DimGray; /* Dark text color */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+p {
+    font-size: 1.2rem; /* Larger paragraph size */
+    line-height: 1.5; /* Improved readability */
+    color: Gray; /* Medium-dark text color */
 }
 
-li {
-  margin-bottom: 10px;
+/* Project Styles */
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-a {
-  color: steelblue;
-  text-decoration: none;
+.project-image img {
+    width: 200px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
 }
 
-a:hover {
-  color: darkslateblue;
+.project-details h3 {
+    font-family: 'Cinzel', serif; /* Decorative font */
+    font-size: 1.5rem; /* Larger heading size */
+    color: DimGray; /* Dark text color */
+    margin-bottom: 10px;
 }
 
+.project-details p {
+    font-size: 1.2rem; /* Larger paragraph size */
+    line-height: 1.5; /* Improved readability */
+    color: Gray; /* Medium-dark text color */
+}
 
+/* Testimonials Section */
+.testimonial {
+    background-color: WhiteSmoke; /* White Smoke */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-info {
+    background-color: WhiteSmoke; /* White Smoke */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-info ul {
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: OrangeRed; /* Orange Red */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    color: DarkOrange; /* Dark Orange */
+}
+
+/* Footer Section */
+footer {
+    background-color: DarkSlateGray; /* Dark slate gray */
+    color: White; /* White */
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links a {
+    color: White; /* White */
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.social-links a:hover {
+    color: OrangeRed; /* Orange Red */
+}
 /* Text Design Styles */
 
 .text-design {
@@ -209,43 +208,6 @@ a:hover {
   }
 }
 /* Skills Section Styles */
-
-.skills {
-  background-color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.skills h2 {
-  background: linear-gradient(to bottom, #fff 50%, transparent 50%);
-  background-size: 100% 200px;
-  background-position: 0% 100%;
-  padding: 20px;
-  font-weight: bold;
-  font-size: 24px;
-  color: #333;
-}
-
-.skills h2 span {
-  background: #fff;
-  padding: 10px;
-}
-
-.skills ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.skills li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.skills li:last-child {
-  border-bottom: none;
-}
-
 /* Experience Section Styles */
 /* Footer Styles */
 
