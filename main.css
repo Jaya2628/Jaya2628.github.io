@@ -62,81 +62,120 @@ body {
   margin-bottom: 20px;
 }
 
-/* Achievements Section Styles */
+.education, .work-experience, .projects, .achievements, .testimonials {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: lightgray;
+  border-radius: 10px;
+}
 
-.achievements {
-  background-color:yellow;
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: steelblue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkslateblue;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: steelblue;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: darkslateblue;
+}
+
+header {
+  background-color: dimgray;
   padding: 20px;
   text-align: center;
 }
 
-.achievements h2 {
-  background: linear-gradient(to bottom, #fff 50%, transparent 50%);
-  background-size: 100% 100px;
-  background-position: 0% 100%;
-  padding: 20px;
-  font-weight: bold;
-  font-size: 24px;
-  color: #333;
-}
-
-.achievements h2 span {
-  background: yellow;
-  padding: 10px;
-}
-
-.achievements ul {
+nav ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.achievements li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+nav li {
+  margin-right: 20px;
 }
 
-.achievements li:last-child {
-  border-bottom: none;
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
-/* Work Section Styles */
-
-.work {
-  background-color:BabyPink;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
-  text-align: center;
 }
 
-.work h2 {
-  background: linear-gradient(to bottom, #fff 50%, transparent 50%);
-  background-size: 100% 200px;
-  background-position: 0% 100%;
+section {
+  background-color: whitesmoke;
   padding: 20px;
-  font-weight: bold;
-  font-size: 24px;
-  color: #333;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.work h2 span {
-  background: BabyPink;
-  padding: 10px;
+h2 {
+  margin-top: 0;
 }
 
-.work ul {
+ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-.work li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+li {
+  margin-bottom: 10px;
 }
 
-.work li:last-child {
-  border-bottom: none;
+a {
+  color: steelblue;
+  text-decoration: none;
 }
+
+a:hover {
+  color: darkslateblue;
+}
+
 
 /* Text Design Styles */
 
@@ -208,118 +247,6 @@ body {
 }
 
 /* Experience Section Styles */
-
-.experience {
-  background-color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.experience h2 {
-  background: linear-gradient(to bottom, #fff 50%, transparent 50%);
-  background-size: 100% 200px;
-  background-position: 0% 100%;
-  padding: 20px;
-  font-weight: bold;
-  font-size: 24px;
-  color: #333;
-}
-
-.experience h2 span {
-  background: #fff;
-  padding: 10px;
-}
-
-.experience ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.experience li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.experience li:last-child {
-  border-bottom: none;
-}
-
-/* Education Section Styles */
-
-.education {
-  background-color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.education h2 {
-  background: linear-gradient(to bottom, #fff 50%, transparent 50%);
-  background-size: 100% 200px;
-  background-position: 0% 100%;
-  padding: 20px;
-  font-weight: bold;
-  font-size: 24px;
-  color: #333;
-}
-
-.education h2 span {
-  background: #fff;
-  padding: 10px;
-}
-
-.education ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.education li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.education li:last-child {
-  border-bottom: none;
-}
-
-/* Contact Section Styles */
-
-.contact {
-  background-color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.contact h2 {
-  background: linear-gradient(to bottom, #fff 50%, transparent 50%);
-  background-size: 100% 200px;
-  background-position: 0% 100%;
-  padding: 20px;
-  font-weight: bold;
-  font-size: 24px;
-  color: #333;
-}
-
-.contact h2 span {
-  background: #fff;
-  padding: 10px;
-}
-
-.contact ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.contact li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.contact li:last-child {
-  border-bottom: none;
-}
 /* Footer Styles */
 
 .footer {
