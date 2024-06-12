@@ -1,241 +1,191 @@
-<!-- Global Styles -->
-<style>
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: WhiteSmoke;
-  color: DimGray;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: DimGray;
-}
-
-/* Bootstrap CSS */
-@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
-
-/* Header Styles */
 header {
-  background-color: DarkSlateGray;
-  color: White;
-  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
   text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 nav li {
-  display: inline;
   margin-right: 20px;
 }
 
 nav a {
-  color: White;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
 nav a:hover {
-  color: OrangeRed;
+  color: #ccc;
 }
 
-/* Main Styles */
 main {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  margin-top: 60px; /* Add margin to compensate for fixed header */
 }
 
-/* Section Styles */
-.section {
-  margin-bottom: 40px;
-  background-color: WhiteSmoke;
+section {
+  background-color: #fff;
+  padding: 2em;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: 40px;
 }
 
-/* About Styles */
-.about {
-  display: flex;
-  align-items: right;
-  justify-content: space-between;
-}
-
-.about-content {
-  flex: 1;
-}
-
-.about-image img {
-  width: 200px;
-  border-radius: 200px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-#about {
-  display: flex;
-  justify-content: right;
-  align-items: right;
+h2 {
+  margin-top: 0;
+  color: #333;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .about-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content:left;
-  gap: 20px;
+  justify-content: center;
 }
 
 .about-card {
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  flex-basis: 40%;
+  margin: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: calc(50% - 10px);
+  border-radius: 10px;
+  background-color: #f7f7f7;
 }
 
 .about-image {
-  width:200px;
-  height:200px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-}
-
-.about-image img {
-  width: 200px;
-  height: 200px;
-  display: block;
-}
-
-.about-text {
-  padding: 20px;
-}
-
-.about-text h2 {
-  margin-top: 0;
-}
-
-/* Project Styles */
-.project {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-/* .project-card {
-  background-color: #fff;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: calc(50% - 10px);
-} */
-.project-image img {
-  width: 200px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  margin-right: 20px;
-}
-
-.project-details h3 {
-  font-family: 'Cinzel', serif;
-  font-size: 1.5rem;
-  color: DimGray;
-  margin-bottom: 10px;
-}
-
-.project-details p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: Gray;
-}
-
-/* Testimonials Section */
-.testimonial {
-  background-color: WhiteSmoke;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-/* Contact Section */
-.contact-info {
-  background-color: WhiteSmoke;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.contact-info ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.contact-info li {
-  margin-bottom: 10px;
-}
-
-.contact-info a {
-  color: OrangeRed;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.contact-info a:hover {
-  color: DarkOrange;
-}
-
-/* Footer Section */
-footer {
-  background-color: DarkSlateGray;
-  color: White;
-  text-align: center;
-  padding: 20px;
-}
-
-.social-links a {
-  color: White;
-  margin-right: 10px;
-  font-size: 1.5rem;
-}
-
-.social-links a:hover {
-  color: OrangeRed;
-}
-
-/* Bootstrap Overrides */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.row {
-  margin: 0 -15px;
-}
-.col-md-4 {
-  padding: 0 15px;
-}
-
-.card {
-  border: none;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.card-img-top {
   width: 100%;
   height: 150px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
-</style>
+
+.about-text {
+  padding: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+#education ul, #work-experience ul, #projects ul, #achievements ul, #testimonials ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#education li, #work-experience li, #projects li, #achievements li, #testimonials li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #666;
+}
+
+#contact ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#contact li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #666;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  margin-right: 20px;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #337ab7;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  clear: both;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Add some color and background images */
+
+#about {
+  background-image: linear-gradient(to bottom, #f7f7f7, #fff);
+  background-size: 100% 300px;
+  background-position: 0% 100%;
+}
+
+#education {
+  background-color: #f2f2f2;
+}
+
+#work-experience {
+  background-color: #e7e7e7;
+}
+
+#projects {
+  background-color: #d7d7d7;
+}
+
+#achievements {
+  background-color: #c7c7c7;
+}
+
+#testimonials {
+  background-color: #b7b7b7;
+}
+
+#contact {
+  background-color: #a7a7a7;
+}
+
+footer {
+  background-color: #333;
+  background-image: linear-gradient(to bottom, #333, #444);
+}
